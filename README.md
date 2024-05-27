@@ -45,17 +45,17 @@
 
  To run this project, you will need:
 
- **.** A web browser (Google Chrome, Firefox, etc.)
+ **1.** A web browser (Google Chrome, Firefox, etc.)
  
- **.** Internet connection to load external libraries (Bootstrap, jQuery, AngularJS)
+ **2.** Internet connection to load external libraries (Bootstrap, jQuery, AngularJS)
 
 # Usage
 
- **. Navigate through the website:** Use the navigation bar to visit different sections of the website.
+ **1. Navigate through the website:** Use the navigation bar to visit different sections of the website.
  
- **. Sign In/Sign Up:** Click on the **"Log In"** or **"Sign up"** buttons to access the respective forms.
+ **2. Sign In/Sign Up:** Click on the **"Log In"** or **"Sign up"** buttons to access the respective forms.
  
- **. Contact Us:** Fill out the contact form to send a message to the team.
+ **3. Contact Us:** Fill out the contact form to send a message to the team.
  
 # Contributing
 
