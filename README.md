@@ -9,11 +9,17 @@
 # Features
 
  **Responsive Navigation Bar:** A responsive navigation bar with links to different sections of the website.
+ 
  **Home Page: ** The landing page with a hero section.
+ 
  **About Us:**  A page describing the company.
- ** Services:** A page detailing the services offered by J-PETS.
+ 
+ **Services:** A page detailing the services offered by J-PETS.
+ 
  **Contact Form:** A contact form to send messages to the team.
+ 
  **User Authentication:** Sign in and sign up forms for user authentication.
+ 
  **Footer:** A footer with company information and useful links.
  
  # File Structure
