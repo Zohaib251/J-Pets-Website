@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="Container">
+      <form action="">
+        <label for="C_fname"> Name</label>
+        <input
+          type="text"
+          id="C_fname"
+          name="name"
+          placeholder="Your  name.."
+          required
+        />
+
+        <label for="C_Email">Email</label>
+        <input
+          type="text"
+          id="C_Email"
+          name="email"
+          placeholder="Your email.."
+          required
+        />
+        <label for="subject">Write Your Question</label>
+        <textarea
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 100px"
+          required
+        ></textarea>
+
+        <input type="submit" id="submit" value="Send Message" />
+      </form>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#submit").click(function () {
+          alert("Your Message has been send to the team.");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <!--? Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--? Font Awesome for Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--? Jquery Cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!--? Angular js cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.js"></script>
+    <title>J-PETS</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="main">
+        <!--? Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <h2 class="logo">J-PETS</h2>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!/">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!/about">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!/services">SERVICES</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#!/contact">CONTACT</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a
+                  class="btn rounded"
+                  id="sign_in"
+                  href="#!/sign_in"
+                  role="button"
+                  >Log In</a
+                >
+                <a
+                  class="btn rounded"
+                  id="sign_up"
+                  href="#!/sign_up"
+                  role="button"
+                  >Sign up</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+          <ng-view> </ng-view>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!--? Footer start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <h3>J-PETS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus, iusto eveniet. Reprehenderit impedit excepturi rem
+              magni ad dolores soluta eligendi ea. Dolor architecto excepturi
+              mollitia?
+            </p>
+            <i class="fa fa-linkedin-square linkedin icons"
+              ><a
+                href="https://www.linkedin.com/in/zohaib-ali-12048a20b/"
+                target="_blank"
+                id="icon_text"
+                >Linkedin</a
+              ></i
+            >
+
+            <i class="fa fa-envelope email icons" aria-hidden="true"
+              ><a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRttNcrBDdBgRTcSxzzGhtHkrtqGtrsgztBXKPVRCCLQXjhSJMdjMCCKNGSsNVbjkjBqfqv"
+                target="_blank"
+                id="icon_text"
+                >Email</a
+              ></i
+            >
+            <i class="fa fa-phone phone icons" aria-hidden="true"
+              ><a target="_blank" id="icon_text">+92-51-111-555-666</a></i
+            >
+          </div>
+          <div class="col-6 col-md-4 useful_links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>
+                <a href="#!/">Home</a><br />
+                <a href="#!/about">About Us</a><br />
+                <a href="#!/services">Services</a><br />
+                <a href="#!/contact">Contact</a><br />
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <h3>Our Location</h3>
+            <address>
+              <p>xyz street, abc sector<br />Islamabad<br />Pakistan</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="angular.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+
+    <script>
+      $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
+          $(".navbar-collapse").toggleClass("show");
+
+          // Toggle button icon between bars and cross
+          if ($(this).find(".navbar-toggler-icon").hasClass("fa-bars")) {
+            $(this)
+              .find(".navbar-toggler-icon")
+              .removeClass("fa-bars")
+              .addClass("fa-times");
+          } else {
+            $(this)
+              .find(".navbar-toggler-icon")
+              .removeClass("fa-times")
+              .addClass("fa-bars");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
