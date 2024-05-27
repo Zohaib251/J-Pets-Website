@@ -10,7 +10,7 @@
 
  **Responsive Navigation Bar:** A responsive navigation bar with links to different sections of the website.
  
- **Home Page: ** The landing page with a hero section.
+ **Home Page:** The landing page with a hero section.
  
  **About Us:**  A page describing the company.
  
@@ -46,12 +46,15 @@
  To run this project, you will need:
 
  **.** A web browser (Google Chrome, Firefox, etc.)
+ 
  **.** Internet connection to load external libraries (Bootstrap, jQuery, AngularJS)
 
 # Usage
 
  **. Navigate through the website:** Use the navigation bar to visit different sections of the website.
- **. Sign In/Sign Up:**Click on the "Log In" or "Sign up" buttons to access the respective forms.
+ 
+ **. Sign In/Sign Up:** Click on the **"Log In"** or **"Sign up"** buttons to access the respective forms.
+ 
  **. Contact Us:** Fill out the contact form to send a message to the team.
  
 # Contributing
@@ -59,4 +62,5 @@
  Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
 # License
+
  This project is licensed under the MIT License.
